@@ -26,6 +26,11 @@ $(function(){
 
            alert("first1"+jsonObject.first1);
        });
+       $("#id_6").click(function(){
+            if (confirm("测试提示框")){
+                alert("------");
+            }
+       });
    },100);
 });
 function OCTransferJS(OCdata){
