@@ -23,12 +23,11 @@ $(function(){
        $("#id_5").click(function(){
            var data =  window.iOS.getSomeData();
            var jsonObject = JSON.parse(data);//json字符串转换json对象
-
-           alert("first1"+jsonObject.first1);
+           alert("获取原生参数值"+jsonObject.first1);
        });
        $("#id_6").click(function(){
-            if (confirm("测试提示框")){
-                alert("------");
+            if (confirm("测试页面1提示框")){
+                window.location.href = "SecondPage.html";
             }
        });
    },100);
